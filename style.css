@@ -1,0 +1,117 @@
+body{
+         font-size:22px;
+         //background-image: url(v.jpg);
+       background-color:black;
+         color:bisque;
+
+     }
+ul {
+    list-style-type: none;
+   padding : 0;
+   margin : 0;
+    overflow : hidden;
+    background-color: #333;
+   //position: fixed;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+   color:white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+   
+.b {
+    display: inline-block;
+    position: relative;
+    
+    float: left;
+    background-color: lightgrey;
+    width: 300px;
+    
+    margin: 25px;
+    
+}
+        h1{
+            padding:25px;
+        }
+
+
+.button {
+    background-color:#333;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    width: 30%;
+    float: left;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: 50%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+ text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:transparent;
+  color: white;
+  font-size: 50px;
+  padding: 16px 32px;
+}
+
+/*.zoom {
+    padding: 50px;
+    
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}*/
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
